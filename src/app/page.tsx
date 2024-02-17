@@ -31,7 +31,7 @@ export default function Home() {
             <span className="text-blue-600">digital assets</span>
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
-            Welcome To TradeHippo. Every assets on our 
+            Welcome To NestHippo. Every assets on our 
             platform is verified by our team to ensure our 
             highest quality standards
           </p>
