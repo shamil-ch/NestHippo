@@ -64,7 +64,7 @@ const ProductReel = (props: ProductReelProps) => {
                         href={href}
                         className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block"
                     >
-                        Shop The Collection
+                        Shop The Collection{` `}
                         <span aria-hidden="true">&rarr;</span>
                     </Link>
                 ) : null }
@@ -74,7 +74,11 @@ const ProductReel = (props: ProductReelProps) => {
                 <div className="mt-6 flex items-center w-full">
                     <div className="w-full grid grid-col gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-10 lg:gap-x-8">
                         {map.map((product, i) => (
-                            <ProductListing product={product} index={i} />
+                            <ProductListing 
+                                key={`product-${i}`} 
+                                product={product} 
+                                index={i} 
+                            />
                         ))}
                     </div>
                 </div>
